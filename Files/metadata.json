@@ -1,0 +1,6 @@
+{
+  "name": "Meltemi Rentals",
+  "description": "Ενοικιάσεις αυτοκινήτων στην Κω. Ξεκάθαρες τιμές, καμία κρυφή χρέωση.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

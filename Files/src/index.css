@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* Ensure stable layout with standard page vertical scrollbar */
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Polished global scrollbar styling */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 9999px;
+  border: 2px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #087ca7;
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Official Requested Palette: 031a6b, 033860, 087ca7, 004385, 05b2dc */
+  --color-brand-midnight: #031a6b;
+  --color-brand-deep: #033860;
+  --color-brand-cobalt: #004385;
+  --color-brand-cerulean: #087ca7;
+  --color-brand-cyan: #05b2dc;
+
+  /* Aegean mappings using the requested palette */
+  --color-aegean-50: #f0f9fd;
+  --color-aegean-100: #e0f4fb;
+  --color-aegean-400: #05b2dc;
+  --color-aegean-500: #087ca7;
+  --color-aegean-600: #004385;
+  --color-aegean-700: #033860;
+  --color-aegean-900: #031a6b;
+
+  /* Clean road and surface neutrals */
+  --color-sand-50: #f8fafc;
+  --color-sand-100: #f1f5f9;
+  --color-sand-200: #e2e8f0;
+
+  /* High-energy speed accents */
+  --color-sun-500: #05b2dc;
+  --color-sun-600: #087ca7;
+
+  /* Ink typography */
+  --color-ink-400: #94a3b8;
+  --color-ink-500: #475569;
+  --color-ink-600: #334155;
+  --color-ink-700: #1e293b;
+  --color-ink-800: #0f172a;
+  --color-ink-900: #031a6b;
+}
+
+/* Custom Date Picker Styles */
+.date-picker-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Hide scrollbar for horizontal scrolling containers */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Artistic Road & Speed Motifs */
+.road-pattern {
+  background-image: radial-gradient(rgba(5, 178, 220, 0.15) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.speed-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(8, 124, 167, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(8, 124, 167, 0.07) 1px, transparent 1px);
+}
+
+.road-stripe {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #05b2dc,
+    #05b2dc 16px,
+    transparent 16px,
+    transparent 32px
+  );
+}
+
