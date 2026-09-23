@@ -1,40 +1,58 @@
-Meltemi Car Rentals — Web Platform and Booking Flow
-===================================================
+Meltemi Car Rentals — Web Platform and Booking System
+=====================================================
 
-An elegant, mobile-first marketing and reservation platform built for Meltemi Car Rentals in Kos, Greece.
+An online car rental showcase and reservation platform built for Meltemi Car Rentals on the island of Kos.
 
-This platform allows tourists and visitors to explore vehicle fleets, check rental availability, calculate pricing dynamically, and submit verified reservation requests.
+-----------------------------------------------------
 
----------------------------------------------------
+Σύντομο Σημείωμα Τεκμηρίωσης (Project Retrospective)
+-----------------------------------------------------
+
+1. Η Διαδρομή του Επισκέπτη και η Σειρά των Ενοτήτων
+
+Μετά από έρευνα σε παραδοσιακές ιστοσελίδες ενοικίασης αυτοκινήτων, επέλεξα μια διαφορετική προσέγγιση αντλώντας έμπνευση από τη δομή των σύγχρονων πλατφορμών κράτησης δωματίων και ξενοδοχείων (όπως Airbnb και Booking.com). Στόχος ήταν ένας καθαρός σχεδιασμός με σαφές, λογικό μονοπάτι από την κορυφή έως τη βάση της σελίδας:
+
+* Hero Section με Ενσωματωμένο Booking Widget: Τοποθετήθηκε άμεσα στην κορυφή ώστε ο επισκέπτης να μπορεί να κάνει αναζήτηση χωρίς περιττό scrolling.
+* Mobile-First Σχεδιασμός: Η συντριπτική πλειοψηφία των τουριστών κλείνει αυτοκίνητο από το κινητό κατά τη διάρκεια του ταξιδιού ή στο αεροδρόμιο, επομένως η εμπειρία βελτιστοποιήθηκε κυρίως για smartphone χρήστες.
+* 3 Λόγοι Επιλογής (Value Propositions): Αμέσως μετά την αναζήτηση, ο χρήστης βλέπει τα κύρια ανταγωνιστικά πλεονεκτήματα της επιχείρησης για να ενισχυθεί η εμπιστοσύνη του.
+* Βασικά Στοιχεία Στόλου (Landing Fleet): Συνοπτική παρουσίαση των αυτοκινήτων στην αρχική σελίδα, με δυνατότητα κλικ σε κάθε όχημα για ανακατεύθυνση σε αναλυτική σελίδα λεπτομερειών (detailed vehicle page).
+* Footer: Συνοπτικές πληροφορίες επικοινωνίας και νομικά στοιχεία.
+
+2. Προσθήκες για την Αύξηση των Κρατήσεων και η Λογική τους
+
+* Live Υπολογισμός Κόστους στο Widget: Εμφανίζει άμεσα τη συνολική τιμή βάσει των επιλεγμένων ημερών. Η διαφάνεια αυτή αποτρέπει την εγκατάλειψη της φόρμας στο τελευταίο βήμα.
+* Side-by-Side Επιλογή Ημερομηνιών: Εύχρηστη και γρήγορη επιλογή παραλαβής και παράδοσης από κοινό οπτικό πεδίο, εξαλείφοντας λάθη ημερομηνιών.
+* Επαλήθευση μέσω Κωδικού OTP στο Email: Αποτρέπει ψεύτικα αιτήματα και spam κρατήσεις που δεσμεύουν αδίκως οχήματα, εξασφαλίζοντας 100% έγκυρα leads για τον ιδιοκτήτη.
+* 100% Responsive Widget: Εξασφαλίζει ότι η διαδικασία κράτησης δεν παρουσιάζει κολλήματα ή κακοτεχνίες σε μικρές οθόνες.
+
+3. Χρόνος Υλοποίησης
+
+* Σχεδιασμός UI: 1-2 ημέρες (περίπου 2-4 ώρες).
+* Σύνδεση Βάσης Δεδομένων και Admin Dashboard: 1-2 ημέρες (περίπου 4-6 ώρες).
+* Λογική Κρατήσεων και Βασικές Δοκιμές (Testing): 1 ημέρα (περίπου 2-3 ώρες).
+* Συνολικός χρόνος: Περίπου 8-13 ώρες καθαρής εργασίας.
+
+4. Τι θα Άλλαζα και τι θα Πρόσθετα με Περισσότερο Χρόνο
+
+Σε ένα δεύτερο στάδιο ανάπτυξης θα υλοποιούσα τις εξής βελτιώσεις:
+
+* Σχεδιαστική Ενοποίηση: Πλήρης εναρμόνιση των χρωμάτων και της τυπογραφίας του booking widget με το γενικό θέμα του site, καθώς και ταχύτερη αρχική φόρτωση του widget.
+* Πιο Επαγγελματικό Header και Βελτιωμένο Navigation: Αρτιότερη πλοήγηση και πιο λεπτομερές layout στο footer.
+* Πλούσιο Περιεχόμενο Οχημάτων: Επαγγελματικές φωτογραφίες (2 εσωτερικές και 2 εξωτερικές ανά όχημα) και αναλυτικότερες τεχνικές προδιαγραφές.
+* Σημεία Παραλαβής και Παράδοσης: Προσθήκη επιλογής τοποθεσίας στο widget (π.χ. Αεροδρόμιο Κω, Λιμάνι, Ξενοδοχείο) και ενσωμάτωση χάρτη της επιχείρησης.
+
+-----------------------------------------------------
 
 Key Features
 ------------
 
-1. Dynamic Fleet and Vehicle Selection
-* Categorized Vehicles: Clear presentation of economy, compact, and SUV vehicle tiers.
-* Transparent Daily Pricing: Real-time pricing display with daily rates in euros per day.
-* Feature Breakdown: Transmission type, seating capacity, AC status, and luggage allowances clearly labeled.
+* Vehicle selection with daily rates and capacity details.
+* Automated date-range validation for vehicle pickup and return.
+* Dynamic price calculation (Rental Days x Daily Rate).
+* Two-step verification using a 6-digit email OTP.
+* Standalone frontend architecture embedding the reservation system via an iframe.
 
-2. Tailored Car Rental Booking Engine
-* Pickup and Drop-off Date Pickers: Side-by-side date selectors with automated date range constraints (return date cannot precede pickup date).
-* Live Cost and Duration Calculator: Automatically computes rental days multiplied by daily rate to show the total amount in real time, reducing checkout friction.
-* International Traveler Support: Integrated international phone selector supporting more than 200 country codes and strict national digit validation.
-
-3. Lead Verification and Spam Protection
-* Anti-Gibberish Name Filter: Algorithmic verification rejecting bot patterns, keyboard mashing, and nonsensical words.
-* Email Verification (OTP): Verification workflow requiring a 6-digit one-time code to prevent fake reservations and ghost bookings.
-* Digital Calendar Invite (.ics): Customers automatically receive an RFC-compliant calendar file to sync their reservation with Google Calendar or Apple Calendar.
-
----------------------------------------------------
-
-Architecture and Security
--------------------------
-
-* Decoupled Architecture (Hub and Spoke): The customer-facing website is completely separated from the core backend database. It contains zero secret API keys, ensuring maximum client-side safety.
-* Seamless Embed Integration: Integrates with the central multi-tenant booking engine through a responsive, lightweight iframe wrapper.
-* Row-Level Security (RLS): All data interactions are enforced at the PostgreSQL level to guarantee tenant isolation and customer data privacy.
-
----------------------------------------------------
+-----------------------------------------------------
 
 Tech Stack
 ----------
@@ -43,59 +61,34 @@ Tech Stack
 * Build Tool: Vite
 * Styling: Tailwind CSS
 * Icons: Lucide React
-* Date Utilities: date-fns
+* Database and Authentication (Backend Engine): Supabase, Netlify Functions
 
----------------------------------------------------
+-----------------------------------------------------
 
 Getting Started Locally
 -----------------------
 
 Prerequisites:
-* Node.js (version 18 or newer recommended)
+* Node.js (version 18 or higher)
 * npm or yarn
 
 Installation:
 
 1. Clone the repository:
-   git clone https://github.com/YOUR_USERNAME/meltemi-rentals.git
+   git clone https://github.com/Astrexos/meltemi-rentals.git
    cd meltemi-rentals
 
 2. Install dependencies:
    npm install
 
-3. Start the local development server:
+3. Run the development server:
    npm run dev
-
-   Open your browser and navigate to http://localhost:5173
 
 4. Build for production:
    npm run build
 
----------------------------------------------------
+-----------------------------------------------------
 
 License
 -------
-This project is proprietary and developed for Meltemi Car Rentals.
-
-===================================================
-
-How to Update It on GitHub
---------------------------
-
-Method 1: Using VS Code
-
-1. Open README.md in VS Code.
-2. Replace all existing text with the clean text above.
-3. Save the file.
-4. Run these terminal commands:
-   git add README.md
-   git commit -m "docs: update clean README"
-   git push origin main
-
-Method 2: Using the GitHub Website
-
-1. Open your repository on GitHub.com.
-2. Click on README.md.
-3. Click the pencil icon to edit.
-4. Replace the content with the text above.
-5. Click "Commit changes..." to save.
+Proprietary project developed for Meltemi Car Rentals.
